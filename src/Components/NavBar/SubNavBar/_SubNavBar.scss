@@ -1,0 +1,28 @@
+.sub-navbar {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 110px;
+    box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.1);
+
+    a:hover {
+        background: rgba(0, 0, 0, 0.03);
+    }
+
+    .side-wrapper {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .active-link {
+        background: none;
+        border-bottom: 3px solid rgb(255, 111, 0);
+        color: rgb(255, 111, 0);
+
+        div {
+            font-weight: 700;
+        }
+    }
+}

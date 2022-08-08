@@ -1,0 +1,18 @@
+.main-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 20px;
+    box-shadow: 0 5px 8px 1px rgba(0, 0, 0, 0.05);
+
+    .side-wrapper {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        :last-child {
+            padding: 0;
+        }
+    }
+}

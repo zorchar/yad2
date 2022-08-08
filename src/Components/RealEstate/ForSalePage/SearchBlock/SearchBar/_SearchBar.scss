@@ -1,0 +1,26 @@
+.search-bar {
+    width: 100vw;
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+
+    .search-bar__top-row {
+        display: flex;
+        justify-content: space-between;
+
+        .get-alert-on-search-button {
+            border: 1px solid $myOrange;
+
+            a {
+                color: $myOrange;
+            }
+
+            &:hover {
+                a {
+                    background: $myOrange;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

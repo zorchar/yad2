@@ -1,0 +1,30 @@
+@import './Icon/Icon';
+@import './NavLinkText/NavLinkText';
+
+.iconed-nav-link {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    color: #000000;
+    padding: 0 15px;
+    text-decoration: none;
+    width: max-content;
+
+    &:hover {
+        background: rgb(247, 247, 247);
+    }
+
+    i {
+        font-size: larger;
+    }
+}
+
+.active-link {
+    background: rgb(240, 240, 240);
+
+    &:hover {
+        background: rgb(240, 240, 240);
+    }
+}

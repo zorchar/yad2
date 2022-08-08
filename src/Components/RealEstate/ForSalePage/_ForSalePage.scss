@@ -1,0 +1,10 @@
+@import './SearchBlock/SearchBar/SearchBar';
+@import './SearchBlock/SearchBar/SearchBarBottomRow/SearchBarBottomRow';
+@import './SearchBlock/SearchBlockInputAndLabel/SearchBlockInputAndLabel';
+@import './SearchBlock/SearchBlock';
+@import './SearchBlock/SearchBar/SearchBarBottomRow/SearchButton/SearchButton';
+
+.forsale-page {
+    background: #f9f9f9;
+    min-height: calc(100vh - 120px);
+}
