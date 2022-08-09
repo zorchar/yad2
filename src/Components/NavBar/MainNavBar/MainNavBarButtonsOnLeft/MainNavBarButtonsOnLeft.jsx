@@ -8,15 +8,15 @@ export default function MainNavBarButtonsOnLeft({ isScreenWidthLessThan1500px })
     return (
         <div className='side-wrapper'>
 
-            <IconedNavLink to={'alert'} text={'התראות'} displayText={!isScreenWidthLessThan1500px}>
+            <IconedNavLink to={'alert'} text={'התראות'} isDisplayText={!isScreenWidthLessThan1500px}>
                 <i className="fa-solid fa-bell"></i>
             </IconedNavLink>
 
-            <IconedNavLink to={'liked'} text={'מודעות שאהבתי'} displayText={!isScreenWidthLessThan1500px}>
+            <IconedNavLink to={'liked'} text={'מודעות שאהבתי'} isDisplayText={!isScreenWidthLessThan1500px}>
                 <i className="fa-solid fa-heart"></i>
             </IconedNavLink>
 
-            <IconedNavLink to={'me'} text={'zorchar'} displayText={!isScreenWidthLessThan1500px}>
+            <IconedNavLink to={'me'} text={'zorchar'} isDisplayText={!isScreenWidthLessThan1500px}>
                 <InitialsContainer text={'z'} />
             </IconedNavLink>
 

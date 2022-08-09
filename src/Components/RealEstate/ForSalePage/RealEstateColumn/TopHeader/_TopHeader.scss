@@ -1,0 +1,36 @@
+.top-header {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    span {
+        color: $myGrey;
+    }
+
+    div {
+        height: inherit;
+    }
+
+    .accessibility-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #002f75;
+        color: #ffffff;
+        border-radius: 5px;
+        width: 90px;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            background: #002151;
+        }
+    }
+}

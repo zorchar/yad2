@@ -1,0 +1,16 @@
+.main-header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 28px;
+
+    h1 {
+        font-weight: 400;
+    }
+
+    span {
+        color: $myGrey ;
+        font-size: smaller;
+    }
+}

@@ -1,6 +1,33 @@
+@import './ExpandSearchButton/ExpandSearchButton';
+
 .search-bar-bottom-row {
     display: flex;
-    gap: 10px;
-    padding-top: 30px;
+    justify-content: space-between;
     align-items: flex-end;
+    padding-top: 30px;
+    width: 100%;
+    gap: 10px;
+
+    #search-area {
+        max-width: 21%;
+    }
+
+    #type-of-asset {
+        max-width: 16%;
+    }
+
+    #number-of-rooms {
+        max-width: 11%;
+    }
+
+    #price-range-low {
+        margin-left: 0;
+        width: 11%;
+    }
+
+    #price-range-high {
+        margin-right: -20px;
+        width: 11%;
+    }
+
 }

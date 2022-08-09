@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function SearchBlockInputAndLabel({ id, label, placeholder }) {
+export default function SearchBlockInputAndLabel({ type = 'text', id, label, placeholder }) {
     return (
-        <div className='search-block__input-and-label'>
-            <label htmlFor={id}>{label}</label>
-            <input type="text" id={id} placeholder={placeholder} />
+        <div id={id} className='search-block__input-and-label'>
+            <label htmlFor={id + '-input'}>{label}</label>
+            <input type={type} id={id + '-input'} placeholder={placeholder} />
         </div>
     )
 }

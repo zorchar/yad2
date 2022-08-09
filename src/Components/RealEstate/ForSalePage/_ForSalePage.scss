@@ -3,8 +3,16 @@
 @import './SearchBlock/SearchBlockInputAndLabel/SearchBlockInputAndLabel';
 @import './SearchBlock/SearchBlock';
 @import './SearchBlock/SearchBar/SearchBarBottomRow/SearchButton/SearchButton';
+@import './RealEstateColumn/RealEstateColumn';
 
 .forsale-page {
     background: #f9f9f9;
     min-height: calc(100vh - 120px);
+    padding-top: 200px;
+    box-shadow: 0 -2px 5px 3px rgba(0, 0, 0, 0.1);
+
+    .width-960 {
+        width: 960px;
+        margin: 0 auto;
+    }
 }

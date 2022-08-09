@@ -9,7 +9,7 @@
     .side-wrapper {
         display: flex;
         align-items: center;
-        height: 100%;
+        height: inherit;
 
         :last-child {
             padding: 0;
