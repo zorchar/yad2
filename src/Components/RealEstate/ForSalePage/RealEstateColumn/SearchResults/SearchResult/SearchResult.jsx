@@ -1,7 +1,19 @@
 import React from 'react'
+import SearchResultLeftSide from './SearchResultLeftSide/SearchResultLeftSide'
+import SearchResultMiddle from './SearchResultMiddle/SearchResultMiddle'
 import SearchResultRightSide from './SearchResultRightSide/SearchResultRightSide'
 
-export default function SearchResult({ src, alt, adress, residentType, neighborhood, settlement }) {
+export default function SearchResult({
+    src,
+    alt,
+    adress,
+    residentType,
+    neighborhood,
+    settlement,
+    roomsAmount,
+    floor,
+    squareMeters
+}) {
     return (
         <div className='search-result'>
             <SearchResultRightSide
@@ -10,9 +22,14 @@ export default function SearchResult({ src, alt, adress, residentType, neighborh
                 neighborhood={neighborhood}
                 settlement={settlement}
                 src={src}
+                alt={alt}
             />
-            <div className='search-middle'></div>
-            <div className='search-left-side'></div>
+            <SearchResultMiddle
+                roomsAmount={roomsAmount}
+                floor={floor}
+                squareMeters={squareMeters}
+            />
+            <SearchResultLeftSide />
         </div>
     )
 }

@@ -29,8 +29,9 @@
             }
 
             &:hover {
+                background: $myOrange;
+
                 a {
-                    background: $myOrange;
                     color: #ffffff;
                 }
             }

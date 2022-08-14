@@ -1,0 +1,10 @@
+@import './NewAdStep/NewAdStep';
+
+.new-ad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    background: $myGreyBackground;
+    min-height: 100vh;
+}

@@ -6,6 +6,12 @@
     padding: 0 20px;
     box-shadow: 0 5px 8px 1px rgba(0, 0, 0, 0.05);
 
+    .iconed-nav-link {
+        &:hover {
+            background: rgb(247, 247, 247);
+        }
+    }
+
     .side-wrapper {
         display: flex;
         align-items: center;

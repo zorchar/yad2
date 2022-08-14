@@ -6,7 +6,7 @@
 @import './RealEstateColumn/RealEstateColumn';
 
 .forsale-page {
-    background: #f9f9f9;
+    background: $myGreyBackground;
     min-height: calc(100vh - 120px);
     padding-top: 200px;
     box-shadow: 0 -2px 5px 3px rgba(0, 0, 0, 0.1);

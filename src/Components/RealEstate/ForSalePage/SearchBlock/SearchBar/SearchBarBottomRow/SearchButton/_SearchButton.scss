@@ -8,4 +8,8 @@
     padding: 11px 5px;
     height: 41px;
     width: 97px;
+
+    &:hover {
+        background: $myDarkOrange;
+    }
 }

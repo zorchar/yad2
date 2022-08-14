@@ -5,8 +5,11 @@
     padding: 0;
     height: 41px;
     width: 138px;
-    // margin-left: 10px;
     font-size: medium;
     background: rgba(159, 159, 159, 0.2);
-    white-space: nowrap; // todo - try later to erase
+
+    // white-space: nowrap; // todo - try later to erase
+    &:hover {
+        background: rgba(159, 159, 159, 0.5);
+    }
 }
