@@ -1,0 +1,44 @@
+.picker-wrapper {
+    width: 25%;
+    height: 40px;
+    border: 1px solid $myGrey;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        border-left: 1px solid $myGrey;
+        height: 39px;
+
+        &:hover {
+            color: $myOrange;
+        }
+
+        &.active {
+            color: #000000;
+            background: $myGreyBorder;
+
+            &:hover {
+                background: $myGrey;
+            }
+        }
+
+        &:last-child {
+            border-left: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        &:first-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+    }
+}

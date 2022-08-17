@@ -1,0 +1,34 @@
+.pick-attribute-box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 20px 0;
+
+    .toggle-attribute-button {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        border: 1px solid $myGreyBorder;
+        border-radius: 9999px;
+        width: 138px;
+        height: 37px;
+        padding: 10px;
+        cursor: pointer;
+        user-select: none;
+        margin: 0 0 10px 10px;
+        font-weight: 100;
+
+        &:hover {
+            color: $myOrange;
+        }
+
+        &.active {
+            color: #000000;
+            background: $myGreyBorder;
+
+            &:hover {
+                background: $myGrey;
+            }
+        }
+    }
+}
