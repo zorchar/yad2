@@ -8,9 +8,9 @@ export default function ContactDetailsForm() {
             <div className='padding-50px-horizontal flex-column'>
                 רגע לפני שמפרסמים את המודעה, נבדוק שפרטי הקשר נכונים
 
-                <LabelAndTextInput label={'שם איש קשר*'} />
+                <LabelAndTextInput name='nameOfContact' label={'שם איש קשר*'} />
 
-                <LabelAndTextInput label={'טלפון ראשי*'} />
+                <LabelAndTextInput name='phoneNumber' label={'טלפון ראשי*'} />
 
                 <div className='horizontal-line'></div>
 
@@ -19,7 +19,7 @@ export default function ContactDetailsForm() {
                     <div className='color-orange'>הוספת איש קשר נוסף</div>
                 </div>
 
-                <LabelAndTextInput label={'דוא"ל'} />
+                <LabelAndTextInput name='email' label={'דוא"ל'} />
 
                 <CheckboxAndLabel label={'קראתי ואישרתי את התקנון*'} />
 

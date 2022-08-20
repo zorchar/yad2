@@ -6,12 +6,8 @@ import NewAdStep from './NewAdStep/NewAdStep'
 import NewAdStepTopRow from './NewAdStep/NewAdStepTopRow/NewAdStepTopRow'
 import PicturesAndVideosForm from './NewAdStep/PicturesAndVideosForm/PicturesAndVideosForm'
 import ContactDetailsForm from './NewAdStep/ContactDetailsForm/ContactDetailsForm'
-import { useContext } from 'react'
-import { NewAdContext } from '../../context/NewAdContext'
 
 export default function NewAd() {
-    const { newAdState } = useContext(NewAdContext)
-    console.log(newAdState);
     return (
         <div className='new-ad'>
 

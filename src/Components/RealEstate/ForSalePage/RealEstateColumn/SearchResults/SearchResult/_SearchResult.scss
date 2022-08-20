@@ -28,6 +28,14 @@
 
         .flex-column {
             align-items: baseline;
+            width: 70%;
+        }
+
+        span {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
         }
     }
 

@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function SearchResultMiddle({ roomsAmount, floor, squareMeters }) {
+export default function SearchResultMiddle({ numberOfRooms, floor, builtSquareMeters }) {
     return (
         <div className='search-result__middle'>
             <div className='flex-column'>
-                {roomsAmount}
+                {numberOfRooms}
                 <div>חדרים</div>
             </div>
             <div className='flex-column'>
@@ -12,7 +12,7 @@ export default function SearchResultMiddle({ roomsAmount, floor, squareMeters })
                 <div>קומה</div>
             </div>
             <div className='flex-column'>
-                {squareMeters}
+                {builtSquareMeters}
                 <div>מ"ר</div>
             </div>
         </div>

@@ -7,29 +7,30 @@ export default function SearchResult({
     src,
     alt,
     adress,
-    residentType,
+    type,
     neighborhood,
     settlement,
-    roomsAmount,
+    numberOfRooms,
     floor,
-    squareMeters
+    builtSquareMeters,
+    price
 }) {
     return (
         <div className='search-result'>
             <SearchResultRightSide
                 adress={adress}
-                residentType={residentType}
+                type={type}
                 neighborhood={neighborhood}
                 settlement={settlement}
                 src={src}
                 alt={alt}
             />
             <SearchResultMiddle
-                roomsAmount={roomsAmount}
+                numberOfRooms={numberOfRooms}
                 floor={floor}
-                squareMeters={squareMeters}
+                builtSquareMeters={builtSquareMeters}
             />
-            <SearchResultLeftSide />
+            <SearchResultLeftSide price={price} />
         </div>
     )
 }

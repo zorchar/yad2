@@ -12,8 +12,8 @@ export default function LabelAndTextInput({ placeholder, name, label }) {
     return (
         <>
             <label htmlFor={name}>{label}</label>
-            <div className='input-wrapper'>
-                <input ref={inputRef} onChange={(e) => newAdDispatch(changeInput(name, e.target.value))} name={name} type='text' placeholder={placeholder} />
+            <div className='input-wrapper '>
+                <input value={newAdState[name] || ''} ref={inputRef} onChange={(e) => newAdDispatch(changeInput(name, e.target.value))} name={name} type='text' placeholder={placeholder} />
                 {newAdState[name] && <i className="fa-solid fa-xmark" onClick={() => {
                     newAdDispatch(changeInput(name, ''))
                     inputRef.current.value = ''
