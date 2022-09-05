@@ -1,40 +1,40 @@
 .search-bar {
-    width: 100%;
-    padding: 20px;
-    margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
 
-    .search-bar__top-row {
-        display: flex;
-        justify-content: space-between;
+  .search-bar__top-row {
+    display: flex;
+    justify-content: space-between;
 
-        .top-row__headline {
-            font-weight: 600;
-            font-size: larger;
-        }
-
-        .get-alert-on-search-button {
-            border: 1px solid $myOrange;
-            border-radius: 2px;
-            width: 215px;
-            height: 30px;
-            font-size: smaller;
-
-            a {
-                color: $myOrange;
-                padding: 0; // todo - check if matters in end 
-
-                div {
-                    font-weight: 700;
-                }
-            }
-
-            &:hover {
-                background: $myOrange;
-
-                a {
-                    color: #ffffff;
-                }
-            }
-        }
+    .top-row__headline {
+      font-weight: 600;
+      font-size: larger;
     }
+
+    .get-alert-on-search-button {
+      border: 1px solid $myOrange;
+      border-radius: 2px;
+      width: 215px;
+      height: 30px;
+      font-size: smaller;
+
+      a {
+        color: $myOrange;
+        padding: 0; // todo - check if matters in end
+
+        div {
+          font-weight: 700;
+        }
+      }
+
+      &:hover {
+        background: $myOrange;
+
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
 }

@@ -1,58 +1,108 @@
 .search-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 86px;
+  border: 1px solid $myGreyBorder;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 1px 3px rgb(137, 137, 137);
+  }
+
+  .search-result__right-side {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 86px;
-    border: 1px solid $myGreyBorder;
-    cursor: pointer;
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 
-    .search-result__right-side {
-        display: flex;
-        align-items: center;
-        width: 50%;
-
-        img {
-            border-radius: 5px;
-            width: 110px;
-            height: 66px;
-            margin: 10px;
-        }
-
-        >div {
-            margin: 10px;
-
-            h3 {
-                font-weight: 400;
-            }
-        }
-
-        .flex-column {
-            align-items: baseline;
-            width: 70%;
-        }
-
-        span {
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-            width: 100%;
-        }
+    img {
+      border-radius: 5px;
+      width: 110px;
+      height: 66px;
+      margin: 10px;
     }
 
-    .search-result__middle {
-        display: flex;
-        align-items: center;
-        border-left: $myGreyBorder 1px solid;
-        height: inherit;
+    > div {
+      margin: 10px;
 
+      h3 {
+        font-weight: 400;
+      }
     }
 
     .flex-column {
-        align-items: center;
-        margin: 0 10px;
-
-        >div {
-            color: $myOpaqueBlack;
-        }
+      align-items: baseline;
+      width: 60%;
     }
+
+    span {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+
+  .search-result__middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: $myGreyBorder 1px solid;
+    border-right: $myGreyBorder 1px solid;
+    height: inherit;
+    width: 25%;
+  }
+
+  .search-result__left-side {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .flex-column {
+      align-items: flex-end;
+      margin-bottom: 15px;
+    }
+
+    .open-in-new-tab {
+      position: relative;
+      bottom: 5px;
+      right: 5px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      &:hover {
+        color: #000000;
+      }
+    }
+
+    .updated-today {
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .click-for-details {
+      color: $myOrange;
+      font-weight: 700;
+      font-size: 0.8rem;
+    }
+
+    .weight-500 {
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: #000000;
+    }
+  }
+
+  .flex-column {
+    align-items: center;
+    margin: 0 10px;
+
+    > div {
+      color: $myOpaqueBlack;
+    }
+  }
 }

@@ -1,116 +1,115 @@
-@import './NoneToThreePicker/NoneToThreePicker';
-@import './PickAttributesBox/PickAttributeBox';
+@import "./NoneToThreePicker/NoneToThreePicker";
+@import "./PickAttributesBox/PickAttributeBox";
 
 #about-asset-form {
-    font-weight: 600;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
+  // font-weight: 600;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 
-    input {
-        border: solid 1px $myGreyBorder;
-        border-radius: 5px;
-        height: 40px;
-        width: 263px;
-        margin-bottom: 15px;
+  input {
+    border: solid 1px $myGreyBorder;
+    border-radius: 5px;
+    height: 40px;
+    width: 263px;
+    margin-bottom: 15px;
+  }
+
+  label {
+    padding-bottom: 5px;
+  }
+
+  select {
+    height: 40px;
+    width: 263px;
+    margin-bottom: 15px;
+    border: solid 1px $myGreyBorder;
+    border-radius: 5px;
+  }
+
+  option {
+    padding: 10px 0;
+  }
+
+  .input-wrapper {
+    width: fit-content;
+    position: relative;
+    margin-left: 10px;
+
+    .fa-xmark {
+      position: absolute;
+      left: 5px;
+      top: 12px;
+    }
+  }
+
+  span {
+    font-size: 0.7rem;
+
+    &.orange {
+      margin: 15px 0;
+      color: $myOrange;
+      font-size: small;
+    }
+  }
+
+  .checkbox {
+    height: 20px;
+    width: 20px;
+    margin: 20px 10px;
+    background: $myOrange;
+    filter: hue-rotate(155deg);
+  }
+
+  textarea {
+    width: 50%;
+    padding: 20px 20px 20px 70px;
+  }
+
+  h4 {
+    margin: 20px 0 0 0;
+    font-weight: 100;
+  }
+
+  span {
+    font-size: 0.75rem;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  #asset-description-progress-bar {
+    margin-left: 40px;
+    position: relative;
+    width: 37%;
+    height: 32px;
+    border-radius: 99999px;
+    background-color: #f3f0f0;
+    border-bottom: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 -1px 1px #fff,
+      0 1px 0 #fff;
+    margin-bottom: 10px;
+    overflow: hidden;
+
+    #percentage {
+      border-radius: 99999px;
+      max-width: 100%;
+      height: 100%;
+      background: $myOrange;
     }
 
-    label {
-        padding-bottom: 5px;
-        font-weight: 100;
-        font-size: smaller;
+    #progress-bar-text {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-left: 20px;
+      height: 100%;
+      width: 100%;
+      color: black;
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      font-weight: 100;
     }
-
-    select {
-        height: 40px;
-        width: 263px;
-        margin-bottom: 15px;
-        border: solid 1px $myGreyBorder;
-        border-radius: 5px;
-    }
-
-    option {
-        padding: 10px 0;
-    }
-
-    .input-wrapper {
-        width: fit-content;
-        position: relative;
-        margin-left: 10px;
-
-        .fa-xmark {
-            position: absolute;
-            left: 5px;
-            top: 12px;
-        }
-    }
-
-    span {
-        font-size: 0.7rem;
-
-        &.orange {
-            margin: 15px 0;
-            color: $myOrange;
-            font-size: small;
-        }
-    }
-
-    .checkbox {
-        height: 20px;
-        width: 20px;
-        margin: 20px 10px;
-        background: $myOrange;
-        filter: hue-rotate(155deg);
-    }
-
-    textarea {
-        width: 50%;
-        padding: 20px 20px 20px 70px;
-    }
-
-    h4 {
-        margin: 20px 0 0 0;
-        font-weight: 100;
-    }
-
-    span {
-        font-size: 0.75rem;
-        font-weight: 100;
-        display: block;
-        margin-bottom: 40px;
-    }
-
-    #asset-description-progress-bar {
-        margin-left: 40px;
-        position: relative;
-        width: 37%;
-        height: 32px;
-        border-radius: 99999px;
-        background-color: #f3f0f0;
-        border-bottom: 1px solid #ddd;
-        box-shadow: inset 0 1px 2px rgba(0, 0, 0, .4), 0 -1px 1px #fff, 0 1px 0 #fff;
-        margin-bottom: 10px;
-        overflow: hidden;
-
-        #percentage {
-            border-radius: 99999px;
-            max-width: 100%;
-            height: 100%;
-            background: $myOrange;
-        }
-
-        #progress-bar-text {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding-left: 20px;
-            height: 100%;
-            width: 100%;
-            color: black;
-            z-index: 10;
-            position: absolute;
-            top: 0;
-            font-weight: 100;
-        }
-    }
+  }
 }

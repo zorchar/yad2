@@ -4,3 +4,13 @@ GET http://localhost:4000/realestate
 
 
 GET http://localhost:4000/realestate/assets
+    
+######
+
+POST http://localhost:4000/realestate/asset
+Content-Type: application/json
+
+{
+    "settlement":"טירת כרמל",
+    "price":3000
+}

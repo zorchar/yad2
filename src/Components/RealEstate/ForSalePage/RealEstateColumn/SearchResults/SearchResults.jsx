@@ -19,8 +19,8 @@ export default function SearchResults() {
                     <SearchResult
                         key={asset.ID}
                         src={'https://img.yad2.co.il/Pic/202208/01/2_1/o/y2_1_07078_20220801131954.jpeg?l=5&c=3&w=195&h=117'}
-                        adress={asset.street + ' ' + asset.addressNumber}
-                        type={asset.type}
+                        address={asset.street + ' ' + asset.addressNumber}
+                        typeOfProperty={asset.typeOfProperty}
                         neighborhood={asset.neighborhood}
                         settlement={asset.settlement}
                         numberOfRooms={asset.numberOfRooms}

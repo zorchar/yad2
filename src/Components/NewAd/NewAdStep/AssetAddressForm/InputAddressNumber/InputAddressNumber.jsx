@@ -1,15 +1,13 @@
 import React from 'react'
 import LabelAndTextInput from '../../LabelAndTextInput/LabelAndTextInput'
 
-export default function InputAddressNumber() {
+export default function InputAddressNumber({ disabled, isInvalidityShown }) {
     return (
         <>
-            {/* <label htmlFor="address-number">מס' בית*</label>
-            <div className='input-wrapper'>
-                <input name='address-number' type="text" placeholder='הכנסת שם הרחוב' />
-                <i className="fa-solid fa-xmark"></i>
-            </div> */}
-            <LabelAndTextInput name={'addressNumber'} label='מס בית*' />
+            <LabelAndTextInput isInvalidityShown={isInvalidityShown}
+                inputType='number' disabled={disabled} name={'addressNumber'} label='מס בית*' />
+            {!disabled && isInvalidityShown && <span>יש לבחור מס' בית מתוך הרשימה</span>}
+
         </>
     )
 }

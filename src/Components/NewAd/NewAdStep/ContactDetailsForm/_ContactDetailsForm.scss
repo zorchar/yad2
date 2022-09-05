@@ -1,11 +1,19 @@
 .plus-sign-with-circle {
-    border: 2px solid $myOrange;
-    border-radius: 50%;
-    width: 1rem;
-    height: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $myOrange;
-    margin-left: 5px;
+  border: 2px solid $myOrange;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $myOrange;
+  margin-left: 5px;
+}
+
+#contact-details-form {
+  padding: 30px 0;
+  input[type="text"] {
+    width: 263px;
+    margin-bottom: 15px;
+  }
 }

@@ -1,0 +1,13 @@
+@import "./ApartmentPropertiesCheckboxes/ApartmentPropertiesCheckboxes";
+@import "./ApartmentPropertiesSecondRow/ApartmentPropertiesSecondRow";
+
+.advanced-search {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid $myGreyBorder;
+  padding: 30px 40px;
+  font-weight: 700;
+  z-index: 10;
+  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.1);
+}

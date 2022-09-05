@@ -1,23 +1,37 @@
 .new-ad-step__top-row {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+
+  .step-headline {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  .step-number {
+    color: $myGreen;
+    border-radius: 50%;
+    border: 2px solid $myGreen;
+    width: 1.75rem;
+    height: 1.75rem;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 15px 0;
+    font-weight: 600;
+    margin: 0 0.75rem;
+  }
 
-    .step-headline {
-        font-size: 1.6rem;
-        font-weight: 300;
-    }
-
-    .step-number {
-        color: $myGreen;
-        border-radius: 50%;
-        border: 2px solid $myGreen;
-        width: 1.75rem;
-        height: 1.75rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 600;
-        margin: 0 0.75rem;
-    }
+  .step-checkmark {
+    color: $myGreen;
+    background-color: #b2e6c2;
+    border-radius: 50%;
+    border: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin: 0 0.75rem;
+  }
 }

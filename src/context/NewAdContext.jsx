@@ -1,20 +1,28 @@
 import React, { createContext, useReducer } from "react";
 import newAdReducer from "../reducers/newAdReducer";
 
-export const NewAdContext = createContext()
+export const NewAdContext = createContext();
 
 const NewAdContextProvider = ({ children }) => {
+  const initialNewAdState = {
+    section2: {
+      isShown: true,
+    },
+    section1: {
+      isSectionValid: true,
+    },
+  };
 
-    const initialNewAdState = {
-    }
+  const [newAdState, newAdDispatch] = useReducer(
+    newAdReducer,
+    initialNewAdState
+  );
 
-    const [newAdState, newAdDispatch] = useReducer(newAdReducer, initialNewAdState)
+  return (
+    <NewAdContext.Provider value={{ newAdState, newAdDispatch }}>
+      {children}
+    </NewAdContext.Provider>
+  );
+};
 
-    return (
-        <NewAdContext.Provider value={{ newAdState, newAdDispatch }}>
-            {children}
-        </NewAdContext.Provider>
-    )
-}
-
-export default NewAdContextProvider
+export default NewAdContextProvider;

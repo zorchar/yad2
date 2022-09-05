@@ -1,28 +1,28 @@
 label {
-    padding-bottom: 5px;
-    margin-top: 20px;
+  padding-bottom: 5px;
+  // margin-top: 20px;
 }
 
 input {
-    border: solid 1px $myGreyBorder;
-    border-radius: 5px;
-    height: 40px;
-    width: 263px;
-    margin-bottom: 15px;
+  border: solid 1px $myGreyBorder;
+  border-radius: 5px;
+  height: 40px;
+  // width: 263px;
+  // margin-bottom: 15px;
 }
 
 option {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .input-wrapper {
-    width: fit-content;
-    position: relative;
-    margin-left: 10px;
+  width: fit-content;
+  position: relative;
+  margin-left: 10px;
 
-    .fa-xmark {
-        position: absolute;
-        left: 5px;
-        top: 12px;
-    }
+  .fa-xmark {
+    position: absolute;
+    left: 5px;
+    top: 12px;
+  }
 }

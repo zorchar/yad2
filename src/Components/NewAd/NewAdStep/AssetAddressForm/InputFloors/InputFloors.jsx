@@ -1,19 +1,63 @@
-import React from 'react'
-import LabelAndTextInput from '../../LabelAndTextInput/LabelAndTextInput'
+import React from "react";
+import { hideInputIfCondition } from "../../../../../utils/hideInputIfCondition";
+import LabelAndTextInput from "../../LabelAndTextInput/LabelAndTextInput";
+import CheckboxAndLabel from "../../../../Inputs/newAdInputs/CheckboxAndLabel/CheckboxAndLabel";
 
-export default function InputFloors() {
-    return (
-        <div className='flex-row-align-end'>
-            <div className='flex-column'>
-                <LabelAndTextInput name='floor' placeholder='הכנסת מספר קומה' label='קומה*' />
-            </div>
-            <div className='flex-column'>
-                <LabelAndTextInput name='floorsInBuilding' placeholder='הכנסת סה"כ קומות' label='סה"כ קומות בבניין*' />
-            </div>
-            <div className='flex-row-center'>
-                <input name='is-on-stilts' type="checkbox" className='checkbox' />
-                <label htmlFor="is-on-stilts">על עמודים</label>
-            </div>
+export default function InputFloors({
+  typeOfPropertyValue,
+  isInvalidityShown,
+  disabled,
+  getIsInvalid,
+}) {
+  const shouldOnStiltsShow = () =>
+    hideInputIfCondition(
+      typeOfPropertyValue,
+      "דירת גן",
+      "מרתף/פרטר",
+      "דיור מוגן"
+    );
+  const shouldFloorNumberShow = () =>
+    hideInputIfCondition(typeOfPropertyValue, "בניין מגורים");
+
+  return (
+    <div className="flex-row-center">
+      {shouldFloorNumberShow() && (
+        <div className="flex-column">
+          <LabelAndTextInput
+            disabled={disabled}
+            isInvalidityShown={
+              isInvalidityShown ? getIsInvalid("floor") : false
+            }
+            inputType="number"
+            name="floor"
+            placeholder="הכנסת מספר קומה"
+            label="קומה*"
+          />
+          {!disabled && isInvalidityShown && getIsInvalid("floor") && (
+            <span>שדה חובה</span>
+          )}
         </div>
-    )
+      )}
+
+      <div className="flex-column">
+        <LabelAndTextInput
+          disabled={disabled}
+          isInvalidityShown={
+            isInvalidityShown ? getIsInvalid("floorsInBuilding") : false
+          }
+          inputType="number"
+          name="floorsInBuilding"
+          placeholder='הכנסת סה"כ קומות'
+          label='סה"כ קומות בבניין*'
+        />
+        {!disabled && isInvalidityShown && getIsInvalid("floorsInBuilding") && (
+          <span>שדה חובה</span>
+        )}
+      </div>
+
+      {shouldOnStiltsShow() && (
+        <CheckboxAndLabel name="isOnStilts" label="על עמודים" />
+      )}
+    </div>
+  );
 }
